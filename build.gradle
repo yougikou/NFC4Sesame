@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.huawei.ohos.app'
+
+// 加载签名信息配置文件
+def signingConfigPropsFile = rootProject.file("signing-config.properties")
+def signingConfigProps = new Properties()
+signingConfigProps.load((new FileInputStream(signingConfigPropsFile)))
+
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#section1112183053510
+ohos {
+    signingConfigs {
+        debug {
+            storeFile file(signingConfigProps['storeFile'])
+            storePassword signingConfigProps['storePassword']
+            keyAlias signingConfigProps['keyAlias']
+            keyPassword signingConfigProps['keyPassword']
+            signAlg = 'SHA256withECDSA'
+            profile file(signingConfigProps['profile'])
+            certpath file(signingConfigProps['certpath'])
+        }
+    }
+    compileSdkVersion 6
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    }
+    dependencies {
+        classpath 'com.huawei.ohos:hap:3.0.3.4'
+        classpath 'com.huawei.ohos:decctest:1.2.6.0'
+        classpath 'com.huawei.agconnect:agcp-harmony:1.0.0.300'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven {
+            url 'https://developer.huawei.com/repo/'
+        }
+    }
+}

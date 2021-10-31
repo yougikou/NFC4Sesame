@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "NFC4Sesame",
+      "value": "NFC4Sesame"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Settings Ability"
+    },
+    {
+      "name": "settings_list_title",
+      "value": "NFC4Sesame设置"
+    },
+    {
+      "name": "title_text_font",
+      "value": "HwChinese-medium"
+    },
+    {
+      "name": "permreason_camera",
+      "value": "用于扫描Sesame QR分享钥匙"
+    },
+    {
+      "name": "permreason_nfc_tag",
+      "value": "用于读取NFC标签"
+    },
+    {
+      "name": "permreason_nfc_event",
+      "value": "用于检测是否接近NFC标签，进而后续执行读取"
+    },
+    {
+      "name": "settings_list_sesame_info",
+      "value": "Sesame共享钥匙信息"
+    },
+    {
+      "name": "settings_list_background",
+      "value": "后台服务设置"
+    },
+    {
+      "name": "settings_list_apikey",
+      "value": "APIKey"
+    },
+    {
+      "name": "app_introduction",
+      "value": "官方App需要在开启App读取NFCTag才能开锁。（都打开App了，还差点一下按钮吗）如果使用NFCTag启动App则需要两次读取Tag才能开锁。并有等待间隔。本软件目的在于简化操作，实现仅一次触碰Tag即达到开关锁的效果。\n\n使用方法:\n1.点击添加按钮（+）扫描你的sesame（芝麻智能锁）的分享二维码，来添加智能锁设备以及密钥信息。\n2.登录Sesame Dashboard（https://partners.candyhouse.co/）获取你的APIKey。\n3.输入你的APIKey测试门锁开关，成功后会自动保存数据。\n4.本App本非真正读取NFC后执行解锁，这样需要常驻后台。因为手机系统限制通常NFC不能在锁屏下工作，所以通过简单的NFCTag启动App的方式开关锁。通过NFC读写软件写入本App的启动应用包名com.giko.sesamenfc即可（推荐使用NFC TagWriter by NXP）。本软件会识别是否通过桌面启动，通过桌面图标启动，或者没有设备设置信息时不会执行开锁，自动进入设置界面。"
+    }
+  ]
+}

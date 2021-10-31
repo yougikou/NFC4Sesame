@@ -1,0 +1,19 @@
+{
+  "settingsList": [
+    {
+      "type": 0,
+      "groupName": "Sesame Shared Keys",
+      "items": [
+        {
+          "name": "SwitchItem",
+          "type": 2,
+          "data": {
+            "mainText": "Item2_2",
+            "subText": "sub title",
+            "defaultSwitch": true
+          }
+        }
+      ]
+    }
+  ]
+}

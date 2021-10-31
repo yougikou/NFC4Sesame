@@ -1,0 +1,83 @@
+{
+  "app": {
+    "bundleName": "com.giko.sesamenfc",
+    "vendor": "giko",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.giko.sesamenfc",
+    "name": ".MyApplication",
+    "mainAbility": "com.giko.sesamenfc.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "metaData":{
+          "customizeData":[
+            {
+              "name": "hwc-theme",
+              "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar",
+              "extra": ""
+            }
+          ]
+        },
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "action.show.result"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.giko.sesamenfc.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:NFC4Sesame",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.CAMERA",
+        "reason": "$string:permreason_camera",
+        "usedScene": {
+          "ability": ["com.giko.sesamenfc.MainAbility"],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.NFC_TAG",
+        "reason": "$string:permreason_nfc_tag",
+        "usedScene": {
+          "ability": ["com.giko.sesamenfc.MainAbility"],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "$string:permreason_nfc_tag",
+        "usedScene": {
+          "ability": ["com.giko.sesamenfc.MainAbility"],
+          "when": "always"
+        }
+      }
+    ]
+  }
+}

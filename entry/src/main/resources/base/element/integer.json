@@ -1,0 +1,12 @@
+{
+  "integer": [
+    {
+      "name": "viewfinder_border_width",
+      "value": 4
+    },
+    {
+      "name": "viewfinder_border_length",
+      "value": 60
+    }
+  ]
+}

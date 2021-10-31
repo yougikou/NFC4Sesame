@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$color:colorAppBackground"
+    ohos:orientation="vertical">
+
+    <!-- title -->
+    <DependentLayout
+        ohos:height="$float:titlePartHeight"
+        ohos:width="match_parent"
+        ohos:background_element="$color:colorAppBackground">
+
+        <DependentLayout
+            ohos:id="$+id:title_area_back_icon_hot_area"
+            ohos:height="$float:titlePartIconHotAreaHeight"
+            ohos:width="$float:titlePartIconHotAreaWidth"
+            ohos:align_parent_left="true"
+            ohos:center_in_parent="true"
+            ohos:start_margin="$float:titlePartIconHotAreaLeftMargin">
+
+            <Image
+                ohos:id="$+id:title_area_back_icon"
+                ohos:height="$float:titlePartIconHeight"
+                ohos:width="$float:titlePartIconWidth"
+                ohos:center_in_parent="true"
+                ohos:image_src="$graphic:icon_back"/>
+        </DependentLayout>
+
+        <Text
+            ohos:id="$+id:title_text"
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:right_of="$id:title_area_back_icon_hot_area"
+            ohos:start_padding="$float:titleTextLeftPadding"
+            ohos:text="$string:settings_list_title"
+            ohos:text_alignment="vertical_center"
+            ohos:text_color="$color:colorAppbarTitle"
+            ohos:text_font="$string:title_text_font"
+            ohos:text_size="$float:titleTextSize"/>
+
+        <DependentLayout
+            ohos:id="$+id:title_area_menu"
+            ohos:height="$float:titlePartIconHotAreaHeight"
+            ohos:width="$float:titlePartIconHotAreaWidth"
+            ohos:visibility="hide"
+            ohos:align_parent_right="true"
+            ohos:center_in_parent="true"
+            ohos:end_margin="$float:titlePartIconHotAreaRightMargin">
+
+            <Image
+                ohos:id="$+id:title_area_menu_icon"
+                ohos:height="$float:titlePartIconHeight"
+                ohos:width="$float:titlePartIconWidth"
+                ohos:center_in_parent="true"
+                ohos:image_src="$graphic:icon_more"/>
+        </DependentLayout>
+
+        <DependentLayout
+            ohos:id="$+id:title_area_add"
+            ohos:height="$float:titlePartIconHotAreaHeight"
+            ohos:width="$float:titlePartIconHotAreaWidth"
+            ohos:center_in_parent="true"
+            ohos:left_of="$id:title_area_menu"
+            ohos:right_margin="12vp">
+
+            <Image
+                ohos:id="$+id:title_area_add_icon"
+                ohos:height="$float:titlePartIconHeight"
+                ohos:width="$float:titlePartIconWidth"
+                ohos:center_in_parent="true"
+                ohos:image_src="$graphic:icon_add"/>
+        </DependentLayout>
+    </DependentLayout>
+
+    <DependentLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="$float:singleCardViewHeight"
+        ohos:width="match_parent"
+        ohos:background_element="$color:colorAppBackground">
+
+        <Text
+            ohos:id="$+id:header_shared_qr_info"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:align_parent_left="true"
+            ohos:center_in_parent="true"
+            ohos:start_margin="$float:singleCardViewLeftMargin"
+            ohos:text="$string:settings_list_sesame_info"
+            ohos:text_color="$color:textColorPrimary"
+            ohos:text_size="$float:textSizeBody1"/>
+    </DependentLayout>
+
+    <DirectionalLayout
+        xmlns:ohos="http://schemas.huawei.com/res/ohos"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$color:colorCardViewBg"
+        ohos:orientation="vertical">
+
+        <DependentLayout
+            ohos:height="$float:singleCardViewHeight"
+            ohos:width="match_parent">
+            <Text
+                ohos:id="$+id:sesame_name_label"
+                ohos:height="$float:singleCardViewTextHeight"
+                ohos:width="match_content"
+                ohos:align_parent_left="true"
+                ohos:center_in_parent="true"
+                ohos:start_margin="$float:singleCardViewLeftMargin"
+                ohos:text="设备名称"
+                ohos:text_color="$color:textColorPrimary"
+                ohos:text_size="$float:textSizeBody1"/>
+            <Text
+                ohos:id="$+id:sesame_name_value"
+                ohos:height="$float:singleCardViewRightTextHeight"
+                ohos:width="match_content"
+                ohos:center_in_parent="true"
+                ohos:end_margin="$float:singleCardViewRightTextRightMargin"
+                ohos:align_parent_right="true"
+                ohos:text_color="$color:textColorSecondary"
+                ohos:text_size="$float:textSizeBody2"/>
+        </DependentLayout>
+
+        <DependentLayout
+            ohos:height="$float:singleCardViewHeight"
+            ohos:width="match_parent">
+            <Text
+                ohos:id="$+id:sesame_uuid_label"
+                ohos:height="$float:singleCardViewTextHeight"
+                ohos:width="match_content"
+                ohos:align_parent_left="true"
+                ohos:center_in_parent="true"
+                ohos:start_margin="$float:singleCardViewLeftMargin"
+                ohos:text="设备UUID"
+                ohos:text_color="$color:textColorPrimary"
+                ohos:text_size="$float:textSizeBody1"/>
+
+            <Text
+                ohos:id="$+id:sesame_uuid_value"
+                ohos:height="$float:singleCardViewRightTextHeight"
+                ohos:width="match_content"
+                ohos:center_in_parent="true"
+                ohos:left_margin="$float:singleCardViewRightTextRightMargin"
+                ohos:end_margin="$float:singleCardViewRightTextRightMargin"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:align_parent_right="true"
+                ohos:text_color="$color:textColorSecondary"
+                ohos:text_size="$float:textSizeBody2"/>
+        </DependentLayout>
+
+        <DependentLayout
+            xmlns:ohos="http://schemas.huawei.com/res/ohos"
+            ohos:height="$float:singleCardViewHeight"
+            ohos:width="match_parent"
+            ohos:background_element="$color:colorAppBackground">
+
+            <Text
+                ohos:id="$+id:header_apikey_setting"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:align_parent_left="true"
+                ohos:center_in_parent="true"
+                ohos:start_margin="$float:singleCardViewLeftMargin"
+                ohos:text="$string:settings_list_apikey"
+                ohos:text_color="$color:textColorPrimary"
+                ohos:text_size="$float:textSizeBody1"/>
+        </DependentLayout>
+
+        <DependentLayout
+            ohos:height="$float:singleCardViewHeight"
+            ohos:width="match_parent">
+            <TextField
+                ohos:id="$+id:sesame_api_key_value"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:multiple_lines="true"
+                ohos:hint="请输入从Sesame Console获取的API Key"
+                ohos:basement="#000000"
+                ohos:center_in_parent="true"
+                ohos:left_margin="$float:singleCardViewRightTextRightMargin"
+                ohos:text_size="$float:textSizeBody2"/>
+        </DependentLayout>
+        <DependentLayout
+            ohos:height="$float:singleCardViewHeight"
+            ohos:width="match_parent">
+            <Button
+                ohos:id="$+id:test_and_save_button"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:padding="$float:ButtonTextPadding"
+                ohos:background_element="$graphic:button_bg"
+                ohos:left_margin="$float:singleCardViewRightTextRightMargin"
+                ohos:text="测试并保存"
+                ohos:text_color="$color:textColorButton"
+                ohos:text_size="$float:textSizeBody1"/>
+        </DependentLayout>
+
+        <Component
+            ohos:id="$+id:item_divider"
+            ohos:height="$float:listDividerHeight"
+            ohos:width="match_parent"
+            ohos:background_element="$color:colorListDivider"
+            ohos:end_margin="$float:singleCardViewRightMargin"
+            ohos:start_margin="$float:singleCardViewLeftMargin"/>
+    </DirectionalLayout>
+    <DirectionalLayout
+        ohos:id="$+id:app_introduction"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:center_in_parent="true"
+        ohos:margin="12vp">
+
+        <TextField
+            ohos:id="$+id:app_introduction_text"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="$string:app_introduction"
+            ohos:align_parent_right="true"
+            ohos:text_color="$color:textColorSecondary"
+            ohos:text_size="12fp"/>
+    </DirectionalLayout>
+
+</DirectionalLayout>

@@ -1,0 +1,32 @@
+apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.huawei.ohos.decctest'
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#section1112183053510
+ohos {
+    compileSdkVersion 6
+    defaultConfig {
+        compatibleSdkVersion 6
+    }
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    testImplementation 'junit:junit:4.13.1'
+    ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.200'
+    implementation 'com.huawei.agconnect:agconnect-core-harmony:1.0.0.300'
+    implementation 'org.bouncycastle:bcpkix-jdk15on:1.56'
+    implementation group: 'com.google.zxing', name: 'core', version: '3.4.0'
+    compile 'commons-codec:commons-codec:1.15'
+}
+decc {
+    supportType = ['html','xml']
+}
+
+apply plugin: 'com.huawei.agconnect'

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$color:colorAppBackground"
+    ohos:orientation="vertical">
+
+    <DependentLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:alignment="center"
+        ohos:background_element="#ffffff">
+
+        <Text
+            ohos:id="$+id:txt"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:text_alignment="center"
+            ohos:text_size="48vp"
+            ohos:text="请求成功"
+            ohos:alpha="0.5"
+            ohos:padding="16vp"/>
+    </DependentLayout>
+
+</StackLayout>
