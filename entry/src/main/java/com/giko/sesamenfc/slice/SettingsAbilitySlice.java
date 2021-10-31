@@ -26,7 +26,7 @@ public class SettingsAbilitySlice extends AbilitySlice {
                 null, false);
         DependentLayout backButton = (DependentLayout) mainComponent.findComponentById(ResourceTable
                 .Id_title_area_back_icon_hot_area);
-        backButton.setClickedListener(component -> this.terminate());
+        backButton.setClickedListener(component -> this.terminateAbility());
         DependentLayout addButton = (DependentLayout) mainComponent.findComponentById(ResourceTable
                 .Id_title_area_add);
         addButton.setClickedListener(listener -> presentForResult(new ScanAbilitySlice(),new Intent(), QR_SCAN_REQUEST_CODE));

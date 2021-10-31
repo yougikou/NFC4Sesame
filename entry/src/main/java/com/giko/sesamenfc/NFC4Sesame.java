@@ -4,7 +4,7 @@ import ohos.aafwk.ability.AbilityPackage;
 import ohos.bundle.IBundleManager;
 import ohos.nfc.NfcController;
 
-public class MyApplication extends AbilityPackage {
+public class NFC4Sesame extends AbilityPackage {
     @Override
     public void onInitialize() {
         super.onInitialize();

@@ -11,7 +11,7 @@ import ohos.agp.window.service.Window;
 import ohos.agp.window.service.WindowManager;
 
 public class NotifyAPIResultAbilitySlice extends AbilitySlice implements Runnable {
-    private static final long DURATION = 3000;
+    private static final long DURATION = 2000;
 
     @Override
     public void onStart(Intent intent) {

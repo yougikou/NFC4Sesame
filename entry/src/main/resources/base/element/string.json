@@ -21,8 +21,8 @@
       "value": "用于扫描Sesame QR分享钥匙"
     },
     {
-      "name": "permreason_nfc_tag",
-      "value": "用于读取NFC标签"
+      "name": "permreason_internet",
+      "value": "用于发送WebAPI请求"
     },
     {
       "name": "permreason_nfc_event",
